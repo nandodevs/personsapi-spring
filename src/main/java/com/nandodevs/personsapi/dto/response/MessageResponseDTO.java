@@ -1,4 +1,4 @@
-package com.nandodevs.personsapi.dto;
+package com.nandodevs.personsapi.dto.response;
 
 import lombok.Builder;
 import lombok.Data;
