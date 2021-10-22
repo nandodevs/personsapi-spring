@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class PersonService {
 
-    private PersonRepository personRepository;
+    private final PersonRepository personRepository;
 
     private final PersonMapper personMapper = PersonMapper.INSTANCE;
 

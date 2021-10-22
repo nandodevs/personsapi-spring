@@ -4,11 +4,11 @@ package com.nandodevs.personsapi.controller;
 import com.nandodevs.personsapi.dto.request.PersonDTO;
 import com.nandodevs.personsapi.dto.response.MessageResponseDTO;
 import com.nandodevs.personsapi.service.PersonService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/v1/people")
