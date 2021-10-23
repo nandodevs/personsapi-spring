@@ -11,6 +11,7 @@ Durante este projeto, foram desenvolvidos e abordados os seguintes tópicos:
 * Relação de cada uma das operações acima com o padrão arquitetural REST, e a explicação de cada um dos conceitos REST envolvidos durante o desenvolvimento do projeto.
 * Desenvolvimento de testes unitários para validação das funcionalidades
 * Implantação do sistema na nuvem através do Heroku
+* Inclusão de Testes Unitários com JUnit e Mockito
 
 Para executar o projeto no terminal, digite o seguinte comando:
 
