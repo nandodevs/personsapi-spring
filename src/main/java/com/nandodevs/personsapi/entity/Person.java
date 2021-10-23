@@ -1,7 +1,11 @@
 package com.nandodevs.personsapi.entity;
 
-import lombok.*;
-import org.hibernate.validator.constraints.br.CPF;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -32,7 +36,6 @@ public class Person {
     private String lastName;
 
     @Column(nullable = false, unique = true)
-    @CPF(message = "CPF inválido!")
     private String cpf; //Verificar: Não está validando
 
     private LocalDate birthDate;
