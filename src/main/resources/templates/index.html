@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Evento de Natal</title>
+    <title>Jedi</title>
 </head>
+
 <body>
-    <h1>Cadastro Evento de Natal 2021</h1>
+
+<div th:if="${message}" th:text="${message}" th:class="${'alert ' + alertClass}"></div>
+
+<h1>Jedi forces</h1>
+
+<table>
+    <tr>
+        <th>NAME</th>
+        <th>LASTNAME</th>
+    </tr>
+    <tr th:each="jedi : ${allJedi}">
+        <td th:text="${jedi.name}"> </td>
+        <td th:text="${jedi.lastName}"> </td>
+    </tr>
+</table>
+
+<br>
+
+<a href="#" th:href="@{/new-jedi}">New Jedi</a>
+
 </body>
 </html>
