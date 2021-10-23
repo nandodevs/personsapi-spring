@@ -4,7 +4,7 @@ package com.nandodevs.personsapi.controller;
 import com.nandodevs.personsapi.dto.request.PersonDTO;
 import com.nandodevs.personsapi.dto.response.MessageResponseDTO;
 import com.nandodevs.personsapi.exception.PersonNotFoundException;
-import com.nandodevs.personsapi.service.PersonService;
+import com.nandodevs.personsapi.PersonService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

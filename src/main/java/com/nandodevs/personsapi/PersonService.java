@@ -1,4 +1,4 @@
-package com.nandodevs.personsapi.service;
+package com.nandodevs.personsapi;
 
 import com.nandodevs.personsapi.dto.request.PersonDTO;
 import com.nandodevs.personsapi.dto.response.MessageResponseDTO;

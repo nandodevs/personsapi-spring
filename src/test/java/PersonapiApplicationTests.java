@@ -1,10 +1,8 @@
-package com.nandodevs.personsapi;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PersonsapiApplicationTests {
+class PersonapiApplicationTests {
 
 	@Test
 	void contextLoads() {
