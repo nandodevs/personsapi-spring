@@ -9,6 +9,8 @@ import com.nandodevs.personsapi.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+
 //Serviços
 import java.util.List;
 import java.util.stream.Collectors;
@@ -43,12 +45,27 @@ public class PersonService {
                 .collect(Collectors.toList());
     }
 
+
     public PersonDTO findById(Long id) throws PersonNotFoundException {
         //Evita verificação como nulas
         //Optional<Person> optionalPerson = personRepository.findById(id);
-        Person person = personRepository.findById(id)
-                .orElseThrow(() -> new PersonNotFoundException(id));
+        Person person = verifyIfExists(id);
 
         return personMapper.toDTO(person);
     }
+
+    public void delete(Long id) throws PersonNotFoundException {
+        verifyIfExists(id);
+        personRepository.deleteById(id);
+    }
+
+    private Person verifyIfExists(Long id) throws PersonNotFoundException {
+        return personRepository.findById(id)
+                .orElseThrow(() -> new PersonNotFoundException(id));
+    }
+
+
+
+
+
 }
