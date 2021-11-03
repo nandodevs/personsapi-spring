@@ -37,7 +37,7 @@ São necessários os seguintes pré-requisitos para a execução do projeto dese
 * Conta no Heroku para o deploy do projeto na nuvem
 * Muita vontade de aprender e compartilhar conhecimento :)
 
-Abaixo, seguem links bem bacanas, sobre tópicos mencionados durante a aula:
+Abaixo, seguem links bem bacanas, sobre as ferramentas e documentação do projeto:
 
 * [SDKMan! para gerenciamento e instalação do Java e Maven](https://sdkman.io/)
 * [Chocolatey](https://chocolatey.org/install)
